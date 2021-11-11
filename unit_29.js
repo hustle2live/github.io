@@ -104,7 +104,6 @@ function fillTheList() {
   }
   setUpListToLS(taskBox);
   getStatistics();
-  inputElement.focus();
 }
 
 function getStatistics() {
@@ -141,8 +140,3 @@ function taskManagement(event) {
   }
 }
 
-// event.target.className === "todo-button" ||
-// event.target.className === "delete-button" ||
-
-// taskBox[key].text === event.path[2].children[0].innerText.trim() ||
-// taskBox[key].text === event.path[2].children[0].innerText.trim() ||
