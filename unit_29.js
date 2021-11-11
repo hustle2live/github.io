@@ -28,7 +28,6 @@ function addNewTask() {
   if (getInput().length === 0) {
     errorMessage.textContent =
       "Error: not enough length. Please, input some text.";
-    inputElement.focus();
     return false;
   }
   errorMessage.textContent = "";
