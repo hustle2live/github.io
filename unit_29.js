@@ -1,17 +1,3 @@
-// Unit 29. To Do List ====================================================
-// *Влад Чередн, [26.10.21 23:25]
-
-// Список требований: =====================================================
-// 1) список должен сохраняться в localstorage
-// 2) должен быть поле для ввода, куда пользователь вводит задачу
-// 3) при добавлении задачи поле очищается и задача добавляется в список.
-// 4) в списке рядом с каждой задачей есть две кнопки. Удалить и выполнить
-// 5) при клике на удалить - задача удаляется
-// 6) при клике на выполнить - задача перечёркивается и становится в конце списка
-// 7) Внизу - блок со статистикой : количество всего задач и количество выполненных задач
-
-// 8) сделать адаптивно и чтобы было красиво
-
 const inputElement = document.querySelector(".input-1");
 const taskListElement = document.querySelector(".tasklist");
 const errorMessage = document.querySelector(".alertMessage");
@@ -63,9 +49,6 @@ const getCompletedItems = (array) =>
   array.filter(({ isComplete }) => isComplete).length;
 
 function fillTheList() {
-  console.log(taskListElement.offsetWidth);
-  console.log(inputElement);
-
   taskListElement.innerHTML = "";
   getListFromLS();
 
@@ -138,4 +121,3 @@ function taskManagement(event) {
     }
   }
 }
-
