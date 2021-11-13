@@ -1,47 +1,364 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <title>Unit 29. To Do List</title>
-  </head>
-  <body>
-    <div class="main-block">
-      <h1>Make your own To Do list:</h1>
-      <section class="block-1">
-        <input placeholder="write a task.." type="text" class="input-1" />
-        <button class="button-primary material-icons-outlined">add</button>
-      </section>
-      <section class="block-2">
-        <div class="alertMessage"></div>
-        <ol type="1" class="tasklist"></ol>
-        <table class="stats">
-          <tbody>
-            <tr>
-              <td>Tasks total:</td>
-              <td class="stats__total">0</td>
-              <td>Completed:</td>
-              <td class="stats__completed">0</td>
-            </tr>
-          </tbody>
-        </table>
-        <button class="button-secondary">Clear all</button>
-      </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="files/css/styles.css" />
+</head>
+<body>
+  <div class="main-container">
+    <div class="main-content-section">
+      <div class="about-me-section">
+        <h2 class="about-me-profession">
+          Junior Front-end Developer
+          <span class="big-h2">(HTML/CSS, JAVAScript)</span>
+        </h2>
+        <div class="my-profile">
+          <div class="my-description-section">
+            <h1 class="my-name-section">
+              Volodymyr Kuznietsov
+              <p class="work-experience-subtitle">
+                06.01.1991 <span class="my-projects-bracket-2">|</span> Kyiv,
+                Ukraine
+              </p>
+            </h1>
+            <p>
+              Beginner front-end developer. Communicable, easily trained, active
+              person. I am ready to improve my front-end developer skills and be
+              a part of a modern dynamic company.
+            </p>
+          </div>
+          <div class="picture">
+            <img
+              class="cv-photo"
+              src="files/img/photo-1.jpg"
+              alt="my CV foto"
+              width="370"
+              height="370"
+            />
+            <div class="contact-section">
+              <h3 class="sidebar-title black">Contacts</h3>
+              <div class="contact-section-type">
+                <b>
+                  Social:
+                  <a href="https://github.com/hustle2live" target="_blank"
+                    ><img class="social" src="files/img/GitHub-logo-wh.png"
+                  /></a>
+                  <a
+                    class="work-experience-subtitle"
+                    href="https://www.facebook.com/kuz.v91/"
+                    target="_blank"
+                    ><img class="social" src="files/img/facebook-icon.png"
+                  /></a>
+                  <a
+                    class="work-experience-subtitle"
+                    href="https://telegram.me/vkuznetsov28"
+                    target="_blank"
+                    ><img class="social" src="files/img/Telegram_Logo.png" /></a
+                ></b>
+              </div>
+              <div>
+                <span class="contact-section-type"><b>Phone:</b></span>
+                <a class="contact-section-link" href="tel:+380991993193"
+                  >+38 099 199 31 93</a
+                >
+              </div>
+              <div>
+                <span class="contact-section-type"><b>E-mail:</b></span>
+                <a
+                  class="contact-section-link"
+                  href="mailto:v.kuznetsov@gmail.com"
+                  >kuz.v@ukr.net</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="my-project-section">
+        <h3>Projects</h3>
+        <ol class="my-projects-list">
+          <li class="my-project-item hide">
+            <span class="my-projects-text">
+              <a
+                href="https://github.com/hustle2live/My_resume"
+                target="_blank"
+                class="link"
+                >My_resume</a
+              ><span class="dots"
+                >................................................</span
+              ><span class="my-projects-bracket">[</span>
+              HTML5, CSS3
+              <span class="my-projects-bracket">]</span>
+            </span>
+          </li>
+          <li class="my-project-item">
+            <span class="my-projects-text">
+              <a
+                href="https://htmlpreview.github.io/?https://github.com/hustle2live/ToDo-List/blob/main/unit_29.html"
+                target="_blank"
+                class="my-projects-link"
+                >To Do List</a
+              >
+              <span class="dots">
+                ...................................................................................</span
+              >
+              <span class="my-projects-bracket">[</span> JavaScript
+              <span class="my-projects-bracket">]</span>
+            </span>
+          </li>
+          <li class="my-project-item">
+            <span class="my-projects-text">
+              <a
+                href="https://htmlpreview.github.io/?https://github.com/hustle2live/My_resume/blob/main/portfolio/adaptive%20Landing%20(html%2C%20css)/index.html"
+                target="_blank"
+                class="my-projects-link"
+                >Adaptive Landing Page</a
+              >
+              <span class="dots"
+                >...................................................</span
+              >
+              <span class="my-projects-bracket">[</span> HTML5, CSS3
+              <span class="my-projects-bracket">]</span>
+            </span>
+          </li>
+        </ol>
+      </div>
+
+      <div class="my-work-experience-section">
+        <div class="company">
+          <h3>Work Experience</h3>
+          <h4 class="work-experience-title">
+            System and network Administrator
+            <span class="orange">Techno Iron Ukraine LLC</span>
+          </h4>
+          <p class="work-experience-subtitle">
+            August 2013 - February 2015
+            <button class="expand button-first black material-icons-outlined">
+              expand_more
+            </button>
+          </p>
+          <ul class="work-experience-description first-list">
+            <span class="">
+              <li>
+                Professional computer skills, software: Windows XP, 7, 8
+                (administration). Setting up and debugging peripheral devices
+                and application programs. Windows 2000-2008 - confident user.
+                Configurating modems, routers and other active equipment.
+                Configuring and administering anti-virus programs.
+              </li>
+              <li>
+                Experience with setting up and management of Active directory -
+                Windows SERVER 2008.
+              </li>
+            </span>
+          </ul>
+        </div>
+
+        <div class="company">
+          <h4 class="work-experience-title">
+            Manager, foreman
+            <span class="orange">Carrol Comfort Technology</span>
+          </h4>
+          <p class="work-experience-subtitle">
+            June 2016 - October 2018
+            <button class="expand button-second black material-icons-outlined">
+              expand_more
+            </button>
+          </p>
+          <ul class="work-experience-description second-list">
+            <li>Sales manager, office manager, foreman.</li>
+            <li>
+              Air conditioning and ventilation systems. Purchase and supply
+              equipment. Maintaining and support of construction projects.
+            </li>
+            <li>
+              Retail sales, marketing, creation of promotional campaigns.
+              Setting up and maintaining an online store.
+            </li>
+            <li>
+              Concluding contracts. Settlements with buyers and suppliers. Sales
+              accounting. Accounting. Working with 1C.
+            </li>
+            <li>Operational management.</li>
+            <li>Working with project documentation.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="my-education-section">
+        <h3>Education</h3>
+        <h4 class="work-experience-title">
+          Automation and Information Technology Faculty,
+          <span class="orange"
+            >Kyiv National University of Construction and Architecture (KNUCA)
+          </span>
+        </h4>
+        <p class="work-experience-subtitle">September 2008 - June 2013</p>
+        <span class="work-experience-description">
+          <li>
+            <span><b>Master's degree.</b> Building Machines and Equipment</span>
+          </li>
+        </span>
+      </div>
+
+      <div class="my-education-section">
+        <h3>Courses and Certifications</h3>
+        <div class="company">
+          <h4 class="work-experience-title">
+            JavaScript 2.0
+            <a class="orange" href="https://itgid.info/" target="_blank"
+              >(WebDev)</a
+            >
+          </h4>
+          <p class="work-experience-subtitle">
+            July 2021 - November 2021
+            <button class="expand button-third black material-icons-outlined">
+              expand_more
+            </button>
+          </p>
+          <p>
+            <b>Number of Units: 30. Number of tasks: 449.</b>
+          </p>
+          <ul class="work-experience-description third-list">
+            <li>The first program. Data entry.</li>
+            <li>Forms: input, range, textarea, checkbox.</li>
+            <li>Loops and iteration in JavaScript. Nested loops.</li>
+            <li>Working with the DOM.</li>
+            <li>
+              Arrays in JavaScript. 2D arrays, Associative array (object).
+              Iterating. Array methods.
+            </li>
+            <li>Getting a weather forecast by API.</li>
+            <li>Set in JavaScript.</li>
+            <li>
+              Mouse, Keyboard events in JavaScript A quick tour of touch events.
+            </li>
+            <li>Try Catch.</li>
+            <li>LocalStorage.</li>
+            <li>Working with POST, GET requests.</li>
+            <li>AJAX - Asynchronous JavaScript.</li>
+            <li>Learning FETCH in Practice.</li>
+            <li>Working with promises.</li>
+            <li>OOP in ES6.</li>
+          </ul>
+          <br />
+
+          <h4 class="work-experience-title">
+            JavaScript mini-course
+            <a class="orange" href="https://goit.ua/" target="_blank">(GoIT)</a>
+            <span class="work-experience-subtitle"> November 2021</span>
+          </h4>
+
+          <h4 class="work-experience-title">
+            English-HTML training
+            <a class="orange" href="https://goit.ua/" target="_blank">(GoIT)</a>
+            <span class="work-experience-subtitle"> August 2021</span>
+          </h4>
+
+          <h4 class="work-experience-title">
+            Certified NLP-practice specialist
+            <a class="orange" href="https://lndgroup.com.ua/" target="_blank"
+              >(L&D Group)</a
+            >
+            <span class="work-experience-subtitle"> February - May 2017</span>
+          </h4>
+        </div>
+      </div>
     </div>
-    <script src="unit_29.js"></script>
-  </body>
-</html>
+
+    <aside class="sidebar-section">
+      <div class="sidebar-info-section">
+        <div class="tech-skills-section">
+          <h3 class="sidebar-title">My Tech Skills</h3>
+          <ul class="tech-skills-list">
+            <li class="tech-skills-item">
+              <span class="tech-skills-item-text">HTML5</span>
+            </li>
+            <li class="tech-skills-item">
+              <span class="tech-skills-item-text">CSS3</span>
+            </li>
+            <li class="tech-skills-item">
+              <span class="tech-skills-item-text">GIT</span>
+            </li>
+            <li class="tech-skills-item">
+              <span class="tech-skills-item-text">JavaScript</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="soft-skills-section work-with">
+          <h3 class="sidebar-title">Work with</h3>
+          <ul class="tech-skills-list">
+            <li class="tech-skills-item">
+              <span class="tech-skills-item-text"
+                >Photoshop, AutoCAD, ABBYY FineReader</span
+              >
+            </li>
+            <li class="tech-skills-item">
+              <span class="tech-skills-item-text">Evernote, GTD</span>
+            </li>
+            <li class="tech-skills-item">
+              <span class="tech-skills-item-text">WordPress</span>
+            </li>
+            <li class="tech-skills-item">
+              <span class="tech-skills-item-text"
+                >OS Windows (7-10) - Administration, Helpdesk</span
+              >
+            </li>
+            <li class="tech-skills-item">
+              <span class="tech-skills-item-text"
+                >MS Office (Word, Excel, PowerPoint)</span
+              >
+            </li>
+            <li class="tech-skills-item">
+              <span class="tech-skills-item-text"
+                >1C: Management of our company 8 (UNF) - advanced user</span
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="soft-skills-section">
+          <h3 class="sidebar-title">Languages</h3>
+          <ul class="tech-skills-list">
+            <li class="tech-skills-item">
+              <span class="tech-skills-item-text"
+                >English (Pre-Intermediate)</span
+              >
+            </li>
+
+            <li class="tech-skills-item">
+              <span class="tech-skills-item-text">Ukraine (Native)</span>
+            </li>
+
+            <li class="tech-skills-item">
+              <span class="tech-skills-item-text">Russian (Native)</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="soft-skills-section">
+          <h3 class="sidebar-title">Hobbies</h3>
+          <ul class="tech-skills-list">
+            <li class="tech-skills-item">
+              <span class="tech-skills-item-text"
+                >Cycling, Fishing, Basketball and Self-development</span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+  </div>
+  <script src="files/js.js"></script>
+</body>
